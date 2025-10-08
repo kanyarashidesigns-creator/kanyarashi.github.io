@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanyarashi Designs</title>
+<style>
+  :root{
+    --bg:#0b0b0b;--accent:#ff6a00;--accent2:#ff8a33;--card:#1a1a1a;--text:#fff;--muted:#ccc;--radius:12px
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,sans-serif;}
+  body{background:var(--bg);color:var(--text);line-height:1.5}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1080px;margin:auto;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:center;padding:18px;border-bottom:1px solid rgba(255,255,255,0.05)}
+  .logo{font-weight:700;font-size:22px;background:linear-gradient(45deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+  h1,h2,h3{margin:10px 0}
+  .hero{background:linear-gradient(180deg, rgba(255,106,0,0.06), rgba(255,138,51,0.03));padding:24px;border-radius:var(--radius);margin-top:18px}
+  .section{margin-top:24px}
+  .card{background:var(--card);padding:16px;border-radius:var(--radius);margin-top:12px}
+  .flex{display:flex;flex-wrap:wrap;gap:12px}
+  .service,.plan,.client,.member{background:rgba(255,255,255,0.03);padding:12px;border-radius:var(--radius)}
+  footer{margin-top:28px;padding:14px;text-align:center;color:var(--muted);font-size:14px}
+  button{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:var(--muted);cursor:pointer}
+  button.active{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0b0b;font-weight:700}
+  form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:#fff;margin-top:8px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0b0b;font-weight:700;border:none;cursor:pointer;margin-top:8px}
+  @media(min-width:768px){.flex{flex-wrap:nowrap}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="logo">Kanyarashi Designs</div>
+  <div>Vamshi Krishna & Chapala Prashanth</div>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Kanyarashi Designs</h1>
+  <p>Graphic Design, Video Editing, Brand Promotion with Instagram Influencers</p>
+  <p>Experience in Real Estate, Healthcare, Political, Corporate, Movies & Weddings</p>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="flex">
+    <div class="service"><strong>Designing:</strong> Posters/Brochures/Flyers ₹499+, Thumbnails ₹499-₹2000</div>
+    <div class="service"><strong>Video Editing:</strong> Reels/Shorts ₹699-₹999, Motion Graphics ₹899-₹1999, Wedding Teasers/Short Films ₹1499-₹9999</div>
+    <div class="service"><strong>Tools:</strong> AI, Photoshop, Premiere Pro, After Effects</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Team</h2>
+  <div class="flex">
+    <div class="member"><strong>Vamshi Krishna Jaligam</strong><br>Founder & Lead Designer</div>
+    <div class="member"><strong>Chapala Prashanth</strong><br>Co-founder & Senior Designer & Video Editor</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <div class="flex">
+    <div class="card">
+      <p>📱 WhatsApp: 96403 51879 / 7702985348</p>
+      <p>📧 Email: kanyarashidesigns@gmail.com</p>
+      <p>📸 Instagram: <a href="https://www.instagram.com/_chintu7_/?hl=en" target="_blank">@_chintu7_</a>, <a href="https://www.instagram.com/kanyarashi_designs/?hl=en" target="_blank">@kanyarashi_designs</a></p>
+    </div>
+    <form class="card" onsubmit="event.preventDefault();alert('Message sent!');">
+      <input placeholder="Your Name" required>
+      <input placeholder="Email or WhatsApp" required>
+      <textarea placeholder="Message" rows="4"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Clients</h2>
+  <div class="flex">
+    <div class="client">Client A</div>
+    <div class="client">Client B</div>
+    <div class="client">Real Estate</div>
+    <div class="client">Healthcare</div>
+  </div>
+</section>
+
+<footer>
+© <span id="yr"></span> Kanyarashi Designs — Vamshi Krishna & Chapala Prashanth
+</footer>
+
+</div>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
