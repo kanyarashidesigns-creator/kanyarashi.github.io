@@ -93,6 +93,45 @@
 </div>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
+</script><!-- ===== GALLERY SECTION ===== -->
+<section id="gallery" style="padding:40px 16px;">
+  <h2 style="text-align:center;margin-bottom:18px;">Our Gallery / మా గ్యాలరీ</h2>
+  <div class="gallery-grid">
+    <!-- Each block = one image -->
+    <a href="#" class="gallery-item" data-full="assets/gallery/full1.jpg" data-caption="Client: Kanya Rashi Designs">
+      <img src="assets/gallery/thumb1.jpg" alt="Kanya Rashi Designs Work">
+      <div class="caption">Kanya Rashi Designs Work</div>
+    </a>
+
+    <a href="#" class="gallery-item" data-full="assets/gallery/full2.jpg" data-caption="Client: Kanya Rashi Studio">
+      <img src="assets/gallery/thumb2.jpg" alt="Kanya Rashi Studio Project">
+      <div class="caption">Kanya Rashi Studio Project</div>
+    </a>
+  </div>
+</section>
+
+<!-- Lightbox (for full image view) -->
+<div id="lightbox">
+  <a href="#" id="lightbox-close" class="close">✕</a>
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-caption" class="lb-caption"></div>
+</div>
+
 </body>
-</html>
+</html><!-- ===== CLIENTS SECTION ===== -->
+<section id="clients" style="padding:30px 16px;">
+  <h2 style="text-align:center;margin-bottom:18px;">Our Clients / మా కస్టమర్లు</h2>
+  <div class="clients-grid">
+    <div class="client">
+      <img src="assets/clients/logo-client1.png" alt="Client One">
+      <div class="client-name">Client One</div>
+    </div>
+
+    <div class="client">
+      <img src="assets/clients/logo-client2.png" alt="Client Two">
+      <div class="client-name">Client Two</div>
+    </div>
+  </div>
+</section>
+
+
